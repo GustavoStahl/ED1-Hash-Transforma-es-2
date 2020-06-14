@@ -120,7 +120,7 @@ int dobra(char chave_string[MAX], int M){
     }
 
     posicao = atoi(blocoPrincipal);
-    if(posicao>=M_string)
+    if(posicao>=M_string || posicao>M)
         posicao %= M+1;
 
     return posicao;
